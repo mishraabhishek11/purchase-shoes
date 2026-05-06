@@ -1,75 +1,160 @@
-# React + TypeScript + Vite
+# 👟 Purchase Shoes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React.js (Vite) e-commerce application** that allows users to browse shoes and manage a basic shopping cart. This project focuses on clean UI design and smooth user experience using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🛍️ Product Listing
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Display a list of available shoes
+- Clean and responsive UI using Tailwind CSS
+- Visually appealing product cards
 
-Note: This will impact Vite dev & build performances.
+### 🛒 Cart Functionality
 
-## Expanding the ESLint configuration
+- Add products to cart
+- Remove items from cart
+- Update cart dynamically
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎨 UI & Animations
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Fully styled with Tailwind CSS
+- Smooth transitions and animations
+- Responsive design for different screen sizes
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+- Frontend: React.js (Vite)
+- Styling: Tailwind CSS
+- State Management: React Hooks
+- Build Tool: Vite
+
+---
+
+## 📂 Project Structure
+
+```
+purchase-shoes/
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.svg
+│  └─ icons.svg
+├─ src
+│  ├─ App.css
+│  ├─ App.tsx
+│  ├─ Constant.ts
+│  ├─ assets
+│  ├─ components
+│  │  ├─ Card.tsx
+│  │  ├─ Cart.tsx
+│  │  ├─ CartItem.tsx
+│  │  ├─ Header.tsx
+│  │  ├─ NewArrival.tsx
+│  │  ├─ OptionSelection.tsx
+│  │  ├─ ProductDetail.tsx
+│  │  └─ SideBar.tsx
+│  ├─ index.css
+│  ├─ main.tsx
+│  └─ type
+│     ├─ CartItem.ts
+│     └─ Product.ts
+├─ tsconfig.app.json
+├─ tsconfig.json
+├─ tsconfig.node.json
+└─ vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Clone the repository
+
+git clone https://github.com/mishraabhishek11/purchase-shoes.git
+
+### 2. Navigate to the project folder
+
+cd purchase-shoes
+
+### 3. Install dependencies
+
+npm install
+
+### 4. Run the development server
+
+npm run dev
+
+### 5. Open in browser
+
+http://localhost:3000
+
+---
+
+## 🧑‍💻 Usage
+
+1. Browse available shoes
+2. Add products to the cart
+3. View and manage cart items
+4. Remove items from the cart
+5. Enjoy smooth UI interactions
+
+---
+
+## 🎯 Learning Objectives
+
+- Build e-commerce UI with React + Vite
+- Use Tailwind CSS for styling
+- Manage cart state and interactions
+- Create responsive UI
+
+---
+
+## 🔮 Future Enhancements
+
+- Product details page
+- Checkout flow
+- Persist cart with localStorage
+- Authentication
+- Backend integration
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a new branch  
+   git checkout -b feature/your-feature
+
+3. Commit changes  
+   git commit -m "Add your message"
+
+4. Push changes  
+   git push origin feature/your-feature
+
+5. Open Pull Request
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👨‍💻 Author
+
+Abhishek Mishra  
+GitHub: https://github.com/mishraabhishek11
+
+---
+
+## ⭐ Support
+
+Give a ⭐ if you like this project!
